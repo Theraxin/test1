@@ -123,9 +123,14 @@ bounce:function(c,t){
 },
 bravery:function(c,t){
 	if (!c.owner.foe.sanctuary){
-		for(var i=0; i<2 && c.owner.hand.length<8 && c.owner.foe.hand.length<8; i++){
-			c.owner.drawcard();
+		for(var i=0; i<2; i++){
+	if (c.owner.foe.hand.length<8){
 			c.owner.foe.drawcard();
+			if (c.owner.foe.hand.length<8)
+			{
+			c.owner.drawcard();
+			}
+		}
 		}
 	}
 },
