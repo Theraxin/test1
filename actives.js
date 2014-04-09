@@ -126,10 +126,7 @@ bravery:function(c,t){
 		for(var i=0; i<2; i++){
 	if (c.owner.foe.hand.length<8){
 			c.owner.foe.drawcard();
-			if (c.owner.foe.hand.length<8)
-			{
 			c.owner.drawcard();
-			}
 		}
 		}
 	}
